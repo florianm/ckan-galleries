@@ -10,7 +10,7 @@ from pylons import config
 # FLICKR INIT
 api_key = u'1903a21d2f1e99652164ad8c681e4b22'
 api_secret = u'34ed321a99cb93f6'
-flickr = flickrapi.FlickrAPI(api_key, api_secret, format='parsed-json')
+flickr = flickrapi.FlickrAPI(api_key, api_secret, format='parsed-json', store_token=False)
 
 # Harvesting options
 photos_per_iteration = 100.
